@@ -25,3 +25,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+:root{
+  --white-1:#FFFFFFCF;
+  --white-2:#FFF;
+  --gray-1:#666666;
+  --gray-2:#2A2A2A;
+  --dark-1:#000;
+  --red-1:#FC3746;
+  --red-1:#FF4955;
+}
