@@ -2,36 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: kaushanScriptRegular;
+  src: url("/black-friday/public/assets/fonts/KaushanScript/KaushanScript.woff2")
+    format("woff2");
+  font-display: fallback;
+}
+@font-face {
+  font-family: leagueGothicRegular;
+  src: url("/black-friday/public/assets/fonts/League_Gothic/LeagueGothic-Regular-VariableFont_wdth.ttf")
+    format("ttf");
+  font-display: fallback;
+}
+@font-face {
+  font-family: Manrope;
+  src: url("/black-friday/public/assets/fonts/Manrope/Manrope-VariableFont_wght.ttf")
+    format("ttf");
+  font-display: fallback;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+html {
+  font-family: 'kaushanScriptRegular', serif;
+  font-size: 62.5%;
+}
+
+::selection {
+  color: white;
+  background: #fc3746;
+}
+
+/* @layer components {
+  .main{
+    @apply flex font-medium leading-[2.3rem] min-h-screen flex-col items-center justify-between p-24  font-kaushanScriptRegular
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+}  */
 
-:root{
+
+
+/* :root{
   --white-1:#FFFFFFCF;
   --white-2:#FFF;
   --gray-1:#666666;
   --gray-2:#2A2A2A;
   --dark-1:#000;
-  --red-1:#FC3746;
+  --red-1:#fc3746;
   --red-1:#FF4955;
-}
+}  */
