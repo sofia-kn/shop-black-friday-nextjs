@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: kaushanScriptRegular;
   src: url("/black-friday/public/assets/fonts/KaushanScript/KaushanScript.woff2")
     format("woff2");
@@ -19,7 +19,7 @@
   src: url("/black-friday/public/assets/fonts/Manrope/Manrope-VariableFont_wght.ttf")
     format("ttf");
   font-display: fallback;
-}
+} */
 
 * {
   margin: 0;
@@ -28,7 +28,7 @@
 } 
 
 html {
-  font-family: 'kaushanScriptRegular', serif;
+  /* font-family: 'kaushanScriptRegular', serif; */
   font-size: 62.5%;
 }
 
@@ -44,10 +44,10 @@ html {
 
 }  */
 
+/* 
 
-
-/* :root{
-  --white-1:#FFFFFFCF;
+:root{
+  --white-1:#ffffffcf;
   --white-2:#FFF;
   --gray-1:#666666;
   --gray-2:#2A2A2A;

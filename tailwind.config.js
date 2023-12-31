@@ -18,15 +18,12 @@ module.exports = {
       "2xl": "1320px",
       "2xl-max": { max: "1320px" },
     },
-    // colors: {
-    //   "primary-red": "#fc3746",
-    //   "secondary-red": "#FF4955",
+
+    // fontFamily: {
+    //   kaushanScriptRegular: "kaushanScriptRegular",
+    //   leagueGothicRegular: "leagueGothicRegular",
+    //   Manrope: "Manrope",
     // },
-    fontFamily: {
-      kaushanScriptRegular: "kaushanScriptRegular",
-      leagueGothicRegular: "leagueGothicRegular",
-      Manrope: "Manrope",
-    },
 
     //   inherit: colors.inherit,
     //   current: colors.current,
