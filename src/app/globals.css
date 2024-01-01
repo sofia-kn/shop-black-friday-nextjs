@@ -31,10 +31,22 @@ html {
   /* font-family: 'kaushanScriptRegular', serif; */
   font-size: 62.5%;
 }
+body{
+  /* background-color: rgba(0, 0, 0, 0.564); */
+}
 
 ::selection {
   color: white;
   background: #fc3746;
+}
+
+.bgImg{
+  background-image: url(/assets/images/bg-006.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 54rem;
+  /* background-color: aqua; */
 }
 
 /* @layer components {
