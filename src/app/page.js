@@ -42,49 +42,54 @@ export default function Home() {
       {partyTime ? (
         <h1>Happy new year</h1>
       ) : (
-        <div className="w-[33.8rem] h-[9.9rem] flex justify-between">
-          <div className="bg-slate-500 basis-32 flex flex-col justify-center items-center border-2 border-[#ffffffcf] ">
-            <span className="text-4xl mb-3">{timerDays}</span>
-            Days
+        <div className="w-[33.8rem] h-[9.9rem] flex justify-between mb-14">
+          <div className=" basis-32 flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
+            <span className="text-6xl mb-3 font-Lr">{timerDays}</span>
+            <span className="font-M">Days</span>
           </div>
-          <div className="bg-slate-500 basis-32 flex flex-col justify-center items-center border-2 border-[#ffffffcf] ">
-            <span className="text-4xl mb-3">{timerHours}</span>
-            Hours
+          <div className=" basis-32 flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
+            <span className="text-6xl mb-3 font-Lr">{timerHours}</span>
+            <span className="font-M"> Hours</span>
           </div>
-          <div className="bg-slate-500 basis-32 flex flex-col justify-center items-center border-2 border-[#ffffffcf] ">
-            <span className="text-4xl mb-3">{timerMinutes}</span>
-            Minutes
+          <div className=" basis-32 flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
+            <span className="text-6xl mb-3 font-Lr">{timerMinutes}</span>
+            <span className="font-M">Minutes</span>
           </div>
-          <div className="bg-slate-500 basis-32 flex flex-col justify-center items-center border-2 border-[#ffffffcf] ">
-            <span className="text-4xl mb-3">{timerSeconds}</span>
-            Seconds
+          <div className=" basis-32 flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
+            <span className="text-6xl mb-3 font-Lr">{timerSeconds}</span>
+            <span className="font-M">Seconds</span>
           </div>
         </div>
       )}
 
-      <div className="w-full h-[54rem] relative bgImg p-14">
-        {/* <div className="absolute w-full h-[54rem]">
-          <Image
-            src="/assets/images/bg-006.jpg"
-            fill
-            // width={300}
-            // height={500}
-            alt="image"
-          />
-        </div> */}
-        <div className="absolute text-white flex flex-col justify-center items-center">
-          <Image
-            src="/assets/images/headphone-01.png"
-            width={100}
-            height={100}
-          />
-          <h3 className="text-[#FF4955]">Up to 50% Off</h3>
-          <h2>Grab Your Favorites Before They're Gone</h2>
-          <p className="text-center w-full">
-            You can trust us to bring you the latest technology at unbeatable
-            prices. Don’t miss this limited-time opportunity to upgrade your
-            audio game. Grab your perfect pair now!
-          </p>
+      <div className="w-full h-[48rem] relative bgImg pt-8 pb-8">
+        <div className=" text-white flex flex-col lg:flex-row-reverse justify-center items-center">
+          <div className="p-6 pb-0 lg:basis-[50%]">
+            <Image
+              src="/assets/images/headphone-01.png"
+              width={100}
+              height={100}
+              alt="image"
+              priority='true'
+              className="
+              lg:w-[300px]
+
+              "
+            />
+          </div>
+          <div className=" m-8 mt-8 sm:min-w-[300px] md:max-w-[500px] lg:basis-[50%]">
+            <h3 className="text-[#FF4955] text-4xl text-center font-Kr">
+              Up to 50% Off
+            </h3>
+            <h2 className="sm:text-6xl md:text-8xl font-medium	text-center mt-6 mb-6 font-Lr break-words		">
+              GRAB YOUR FAVORITES BEFORE THEY'RE GONE
+            </h2>
+            <p className="text-center w-full sm:text-xl md:text-2xl font-M text-slate-100">
+              You can trust us to bring you the latest technology at unbeatable
+              prices. Don’t miss this limited-time opportunity to upgrade your
+              audio game. Grab your perfect pair now!
+            </p>
+          </div>
         </div>
       </div>
     </main>

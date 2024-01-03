@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer {
+  
+  @font-face {
+    font-family: "kaushanScript-Regular";
+    src: url("/assets/fonts/Kaushan_Script/KaushanScript-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "LeagueGothic-Regular";
+    src: url("/assets/fonts/League_Gothic/LeagueGothic-Regular-VariableFont_wdth.ttf");
+  }
+
+  @font-face {
+    font-family: "Manrope";
+    src: url("/assets/fonts/Manrope/Manrope-VariableFont_wght.ttf");
+  }
+ /*
+  @font-face {
+    font-family: "Vazirmatn-Bold";
+    src: url("/font/Vazirmatn-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "Vazirmatn-ExtraBold";
+    src: url("/font/Vazirmatn-ExtraBold.ttf");
+  } */
+}
+
 /* @font-face {
   font-family: kaushanScriptRegular;
   src: url("/black-friday/public/assets/fonts/KaushanScript/KaushanScript.woff2")
@@ -32,7 +60,8 @@ html {
   font-size: 62.5%;
 }
 body{
-  /* background-color: rgba(0, 0, 0, 0.564); */
+  background-color: #000;
+  color: #fff;
 }
 
 ::selection {
@@ -45,7 +74,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 54rem;
+  height: 48rem;
   /* background-color: aqua; */
 }
 
