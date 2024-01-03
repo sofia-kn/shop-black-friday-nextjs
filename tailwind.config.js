@@ -7,17 +7,24 @@ module.exports = {
   ],
   theme: {
     screens: {
-      sm: "545px",
+      sm: "360px",
       "sx-max": { max: "545px" },
-      md: "768px",
+      md: "545px",
       "md-max": { max: "768px" },
-      lg: "920px",
+      lg: "767px",
       "lg-max": { max: "920px" },
       xl: "1200px",
       "xl-max": { max: "1200px" },
       "2xl": "1320px",
       "2xl-max": { max: "1320px" },
     },
+    fontFamily: {
+      "Kr": "kaushanScript-Regular",
+      "Lr": "LeagueGothic-Regular",
+      "M": "Manrope",
+   
+    },
+
 
     // fontFamily: {
     //   kaushanScriptRegular: "kaushanScriptRegular",
