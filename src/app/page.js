@@ -42,35 +42,42 @@ export default function Home() {
       {partyTime ? (
         <h1>Happy new year</h1>
       ) : (
-        <div className="container w-full  flex justify-evenly mb-14 relative">
-          <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px] flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
-            <div className="flex w-[60px] h-[70px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
-              <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">{timerDays}</div>
+        <div className="container w-full flex justify-center mb-14 relative">
+          <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px] flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] mr-5 lg:mr-10">
+            <div className="flex w-[60px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
+              <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
+                {timerDays}
+              </div>
             </div>
             <span className="font-M lg:text-2xl">DAYS</span>
           </div>
-        
-          <div className="w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
-            <div className="flex w-[60px] h-[70px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
-              <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">{timerHours}</div>
+
+          <div className="w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] mr-5 lg:mr-10">
+            <div className="flex w-[60px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
+              <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
+                {timerHours}
+              </div>
             </div>
             <span className="font-M lg:text-2xl">HOURS</span>
           </div>
-        
-          <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
-            <div className="flex w-[60px] h-[70px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
-              <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">{timerMinutes}</div>
+
+          <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] mr-5 lg:mr-10">
+            <div className="flex w-[60px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
+              <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
+                {timerMinutes}
+              </div>
             </div>
             <span className="font-M lg:text-2xl">MINUTES</span>
           </div>
-        
-          <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
-            <div className="flex w-[60px] h-[70px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
-              <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">{timerSeconds}</div>
+
+          <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] mr-5 lg:mr-10">
+            <div className="flex w-[60px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
+              <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
+                {timerSeconds}
+              </div>
             </div>
             <span className="font-M lg:text-2xl">SECONDS</span>
           </div>
-        
         </div>
       )}
 
