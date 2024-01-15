@@ -40,41 +40,41 @@ export default function Timer() {
       {partyTime ? (
         <h1>Happy new year</h1>
       ) : (
-        <div className="container w-full flex justify-center mb-14 relative">
-          <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px] flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] mr-5 lg:mr-10">
+        <div className="container w-full md:w-[65%] lg:w-[75%] flex justify-between mb-14 relative pr-[20px] pl-[20px]">
+          <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px] flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
             <div className="flex w-[60px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
               <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
                 {timerDays}
               </div>
             </div>
-            <span className="font-M lg:text-2xl">DAYS</span>
+            <span className="font-M text-[10px] lg:text-sm">DAYS</span>
           </div>
 
-          <div className="w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] mr-5 lg:mr-10">
+          <div className="w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
             <div className="flex w-[60px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
               <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
                 {timerHours}
               </div>
             </div>
-            <span className="font-M lg:text-2xl">HOURS</span>
+            <span className="font-M text-[10px] lg:text-sm">HOURS</span>
           </div>
 
-          <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] mr-5 lg:mr-10">
+          <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
             <div className="flex w-[60px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
               <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
                 {timerMinutes}
               </div>
             </div>
-            <span className="font-M lg:text-2xl">MINUTES</span>
+            <span className="font-M text-[10px] lg:text-sm">MINUTES</span>
           </div>
 
-          <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] mr-5 lg:mr-10">
+          <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
             <div className="flex w-[60px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
               <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
                 {timerSeconds}
               </div>
             </div>
-            <span className="font-M lg:text-2xl">SECONDS</span>
+            <span className="font-M text-[10px] lg:text-sm">SECONDS</span>
           </div>
         </div>
       )}

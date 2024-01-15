@@ -57,7 +57,7 @@
 
 html {
   /* font-family: 'kaushanScriptRegular', serif; */
-  font-size: 62.5%;
+ 
 }
 body{
   background-color: #000;
@@ -76,7 +76,18 @@ body{
   background-position: center center;
   /* height: 88rem; */
 }
+.bgImgPink{
+  background-image: url(/assets/images/headphones-img-02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 
+}
+
+.square{
+  aspect-ratio: 1;
+  width:100%;
+}
 /* @layer components {
   .main{
     @apply flex font-medium leading-[2.3rem] min-h-screen flex-col items-center justify-between p-24  font-kaushanScriptRegular
