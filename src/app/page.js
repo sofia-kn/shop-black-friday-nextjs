@@ -10,7 +10,7 @@ export default function Home() {
   const [timerSeconds, setTimerSeconds] = useState(0);
 
   useEffect(() => {
-    const target = new Date("01/04/2024 18:24:00");
+    const target = new Date("02/13/2024 18:24:00");
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -42,49 +42,65 @@ export default function Home() {
       {partyTime ? (
         <h1>Happy new year</h1>
       ) : (
-        <div className="w-[33.8rem] h-[9.9rem] flex justify-between mb-14">
-          <div className=" basis-32 flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
-            <span className="text-6xl mb-3 font-Lr">{timerDays}</span>
-            <span className="font-M">Days</span>
+        <div className="container w-full flex justify-center mb-14 relative">
+          <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px] flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] mr-5 lg:mr-10">
+            <div className="flex w-[60px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
+              <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
+                {timerDays}
+              </div>
+            </div>
+            <span className="font-M lg:text-2xl">DAYS</span>
           </div>
-          <div className=" basis-32 flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
-            <span className="text-6xl mb-3 font-Lr">{timerHours}</span>
-            <span className="font-M"> Hours</span>
+
+          <div className="w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] mr-5 lg:mr-10">
+            <div className="flex w-[60px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
+              <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
+                {timerHours}
+              </div>
+            </div>
+            <span className="font-M lg:text-2xl">HOURS</span>
           </div>
-          <div className=" basis-32 flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
-            <span className="text-6xl mb-3 font-Lr">{timerMinutes}</span>
-            <span className="font-M">Minutes</span>
+
+          <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] mr-5 lg:mr-10">
+            <div className="flex w-[60px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
+              <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
+                {timerMinutes}
+              </div>
+            </div>
+            <span className="font-M lg:text-2xl">MINUTES</span>
           </div>
-          <div className=" basis-32 flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
-            <span className="text-6xl mb-3 font-Lr">{timerSeconds}</span>
-            <span className="font-M">Seconds</span>
+
+          <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] mr-5 lg:mr-10">
+            <div className="flex w-[60px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
+              <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
+                {timerSeconds}
+              </div>
+            </div>
+            <span className="font-M lg:text-2xl">SECONDS</span>
           </div>
         </div>
       )}
 
-      <div className="w-full h-[48rem] relative bgImg pt-8 pb-8">
-        <div className=" text-white flex flex-col lg:flex-row-reverse justify-center items-center">
-          <div className="p-6 pb-0 lg:basis-[50%]">
+      <div className="container w-full relative bgImg p-20 ">
+        <div className=" text-white flex flex-col lg:flex-row-reverse justify-evenly items-center">
+          <div className="p-6 pb-0 ">
             <Image
-              src="/assets/images/headphone-01.png"
-              width={100}
-              height={100}
+              src="/assets/images/headphone-02.png"
+              width={280}
+              height={380}
               alt="image"
-              priority='true'
-              className="
-              lg:w-[300px]
-
-              "
+              className="sm:w-[115px] lg:w-[480px] xl:w-[480px] "
+              priority
             />
           </div>
-          <div className=" m-8 mt-8 sm:min-w-[300px] md:max-w-[500px] lg:basis-[50%]">
-            <h3 className="text-[#FF4955] text-4xl text-center font-Kr">
+          <div className=" m-8 mt-8 sm:min-w-[300px] md:max-w-[500px]">
+            <h3 className="text-[#FF4955] text-4xl text-center font-Kr lg:text-left">
               Up to 50% Off
             </h3>
-            <h2 className="sm:text-6xl md:text-8xl font-medium	text-center mt-6 mb-6 font-Lr break-words		">
+            <h2 className="sm:text-6xl md:text-6xl lg:text-8xl font-medium	text-center mt-6 mb-6 font-Lr break-words	lg:text-left	">
               GRAB YOUR FAVORITES BEFORE THEY'RE GONE
             </h2>
-            <p className="text-center w-full sm:text-xl md:text-2xl font-M text-slate-100">
+            <p className="text-center w-full sm:text-xl md:text-xl lg:text-2xl font-M text-slate-100 lg:text-left">
               You can trust us to bring you the latest technology at unbeatable
               prices. Don’t miss this limited-time opportunity to upgrade your
               audio game. Grab your perfect pair now!
