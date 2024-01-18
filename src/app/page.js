@@ -37,17 +37,17 @@ export default function Home() {
       </div>
       <div className="container w-full relative  mt-16">
         <div className=" text-white flex flex-col lg:flex-row-reverse justify-evenly items-center">
-          <div className="square bgImgPink relative text-right basis-2/4">
-            <div className=" w-full bg-orange-200">
+          <div className="bg-orange-200 square bgImgPink relative text-right basis-2/4">
+            <div className=" w-full ">
               <img
                 src="/assets/images/image.jpg"
-                className="absolute top-[-6rem] left-6 xl:left-[-9rem] xl:top-[2rem] w-[33%] xl:w-[28%]"
+                className="aspect-square  absolute top-[20rem] left-[13.5rem] lg:left-[-8.5rem] lg:top-[1rem] w-[30%] xl:w-[28%]"
               ></img>
             </div>
           </div>
 
-          <div className=" sm:min-w-[300px] md:max-w-[500px] flex justify-between flex-col xl:justify-end-end basis-2/4">
-            <h3 className="text-[#FF4955] text-xl lg:text-3xl  font-Kr text-left mt-[16rem]">
+          <div className=" sm:min-w-[300px] md:max-w-[500px] flex justify-between flex-col md:justify-end-end basis-2/4 sm:mt-20 md:mt-0">
+            <h3 className="text-[#FF4955] text-xl md:text-3xl  font-Kr text-left md:mt-[16rem]">
               Black Friday Exclusive
             </h3>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-medium mt-5 mb-5 font-Lr break-words	text-left	">
