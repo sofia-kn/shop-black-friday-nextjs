@@ -31,7 +31,7 @@ export default function Home() {
               prices. Don’t miss this limited-time opportunity to upgrade your
               audio game. Grab your perfect pair now!
             </p>
-            <RedButton />
+            <RedButton/>
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@ export default function Home() {
             <Image
               src="/assets/images/headphones-img-02.jpg"
               fill
-              className="object-cover"
+              className="object-cover bg-center"
               alt="image"
             />
           </div>
