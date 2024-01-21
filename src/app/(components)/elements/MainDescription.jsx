@@ -1,10 +1,10 @@
 import React from "react";
 import RedButton from "./RedButton";
 
-export default function MainDescription({ mt,m, mTop,w, pText  }) {
+export default function MainDescription({ mt, mTop,w, pText  }) {
   return (
     <div
-      className={` m-${m} mt-${mTop} lg:w-1/2 flex justify-between flex-col lg:mt-[${mt}]`}
+      className={`m-8 mt-${mTop} lg:w-1/2 flex justify-between flex-col lg:mt-[${mt}]`}
     >
       <h3 className="text-[#FF4955] text-xl lg:text-3xl text-center font-Kr lg:text-left">
         Up to 50% Off
@@ -15,7 +15,7 @@ export default function MainDescription({ mt,m, mTop,w, pText  }) {
       <p className={`lg:w-${w} text-center w-full text-sm md:text-xl lg:text-xl font-M text-slate-100 lg:text-left mb-6`}>
       {pText}
       </p>
-      <RedButton />
+      <RedButton textCenter={'center'}/>
     </div>
   );
 }
