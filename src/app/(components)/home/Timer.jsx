@@ -43,7 +43,7 @@ export default function Timer() {
         <div className="container w-full md:w-[65%] lg:w-[75%] flex justify-between mb-14 relative pr-[20px] pl-[20px]">
           <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px] flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
             <div className="flex w-[60px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
-              <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
+              <div className="m-auto mt-[-1rem] lg:mt-[-2rem]  font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
                 {timerDays}
               </div>
             </div>
@@ -52,7 +52,7 @@ export default function Timer() {
 
           <div className="w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
             <div className="flex w-[60px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
-              <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
+              <div className="m-auto mt-[-1rem] lg:mt-[-2rem]  font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
                 {timerHours}
               </div>
             </div>
@@ -61,7 +61,7 @@ export default function Timer() {
 
           <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
             <div className="flex w-[60px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
-              <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
+              <div className="m-auto mt-[-1rem] lg:mt-[-2rem]  font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
                 {timerMinutes}
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function Timer() {
 
           <div className=" w-[75px] h-[100px] lg:w-[162px] lg:h-[162px] xl:w-[249px] xl:h-[249px]  flex flex-col justify-center items-center border-[0.5px] border-[#ffffff59] ">
             <div className="flex w-[60px] lg:w-[100px] lg:h-[100px] xl:w-[165px] xl:h-[170px]">
-              <div className="m-auto mt-[-1rem] lg:mt-[-2rem] xl:mt-[-3rem] font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
+              <div className="m-auto mt-[-1rem] lg:mt-[-2rem]  font-Lr text-[40px] lg:text-[85px] xl:text-[146px] ">
                 {timerSeconds}
               </div>
             </div>

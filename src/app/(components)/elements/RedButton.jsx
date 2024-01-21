@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function RedButton() {
+export default function RedButton({textCenter}) {
   return (
-    <div className="text-center lg:text-left">
-      <button className="bg-[#fc3746] pt-4 pb-4 pl-7 pr-7 font-Lr">
+    <div className={`text-${textCenter} lg:text-left`}>
+      <button className="bg-[#fc3746] pt-3 pb-3 pl-5 pr-5 font-Lr">
         <a className="text-lg tracking-[2px]">SHOP NOW</a>
       </button>
     </div>
