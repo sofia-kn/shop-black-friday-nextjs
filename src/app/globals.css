@@ -68,6 +68,43 @@ body{
   color: white;
   background: #fc3746;
 }
+.body-bg-image{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.85)), url("/assets/images/bg-body.jpg");
+  background-size: 283%;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100%;
+}
+@media screen and (min-width: 485px){
+  .body-bg-image{
+    background-size: 213%;
+  }
+}
+@media screen and (min-width: 545px){
+  .body-bg-image{
+    background-size: 285%;
+  }
+}
+@media screen and (min-width: 920px){
+  .body-bg-image{
+    background-size: 187%;
+  }
+}
+@media screen and (min-width: 1200px){
+  .body-bg-image{
+    background-size: 138%;
+  }
+}
+@media screen and (min-width: 1320px){
+  .body-bg-image{
+    background-size: 126%;
+  }
+}
+@media screen and (min-width: 1500px){
+  .body-bg-image{
+    background-size: 110%;
+  }
+}
 
 .bgImg{
   background-image: url(/assets/images/bg-006.jpg);

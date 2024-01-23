@@ -9,20 +9,22 @@ module.exports = {
     screens: {
       sm: "360px",
       "sx-max": { max: "545px" },
-      md: "545px",
+      md: "485px",
       "md-max": { max: "768px" },
-      lg: "767px",
-      "lg-max": { max: "920px" },
+      lg: "545px",
+      "lg-max": { min: "920px" },
       xl: "1200px",
       "xl-max": { max: "1200px" },
       "2xl": "1320px",
-      "2xl-max": { max: "1320px" },
+      "2xl-max": { min: "1320px" },
+      "3xl-max": { min: "1500px" },
+
     },
     fontFamily: {
       "Kr": "kaushanScript-Regular",
       "Lr": "LeagueGothic-Regular",
       "M": "Manrope",
-   
+
     },
 
 
