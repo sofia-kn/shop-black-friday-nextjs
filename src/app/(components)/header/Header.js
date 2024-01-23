@@ -65,7 +65,7 @@ export default function Header() {
                 <p className="text-[#FF4955] mb-7 3xl-max:mb-6  font-Kr text-[20px] lg:text-[23px] lg-max:text-[30px]">Hurry, Black Friday Is Almost Here!</p>
                 <h1 className="text-[5.6rem] lg:text-[10rem] lg-max:text-[11rem]  leading-[5.1rem] lg:leading-[9rem] lg-max:leading-[10rem] tracking-[0] font-Lr font-normal uppercase ">
                     Time Left Until Our
-                    <span className="text-[#FF4955]  ml-4 ">
+                    <span className="text-[#FF4955] text-[5.6rem] lg:text-[10rem] lg-max:text-[11rem]  ml-4 ">
                          Biggest Sale of the Year Begins
                     </span>
 
