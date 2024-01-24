@@ -24,6 +24,34 @@ export default function Header() {
         <div className="body-bg-image w-full h-screen flex flex-row justify-center items-center text-center">
             <header className="w-full flex h-[80px] absolute top-0  flex-row justify-between font-kr text-2xl px-5 mr-2 md:px-7  lg-max:px-[74px] 2xl-max:px-[90px] items-center">
                 <Image className="3xl-max:ml-3" src={logo} width={132} height={48} alt="logo"/>
+                {!openMenu ?(
+                        <div className="w-full absolute top-32 flex flex-col lg-max:hidden justify-center items-center left-0 h-[260px] bg-[#2A2A2A]">
+                            <div className="w-full  h-[40px] flex justify-start cursor-pointer hover:bg-black hover:text-red-600 transition ease-in-out delay-100 items-center text-4xl px-5 py-[3.15rem] border border-gray-600 border-b-0 text-center">
+                                <Link href="#">
+                                    HOME
+                                </Link>
+                            </div>
+                            <div className="w-full  h-[40px] flex justify-start cursor-pointer hover:bg-black hover:text-red-600 transition ease-in-out delay-100 items-center text-4xl px-5 py-[3.15rem] border border-gray-600 border-b-0 text-center">
+                                <Link href="#">
+                                    SHOP
+                                </Link>
+                            </div>
+                            <div className="w-full  h-[40px] flex justify-start cursor-pointer hover:bg-black hover:text-red-600 transition ease-in-out delay-100 items-center text-4xl px-5 py-[3.15rem] border border-gray-600 border-b-0 text-center">
+                                <Link href="#">
+                                    ABOUT
+                                </Link>
+                            </div>
+                            <div className="w-full  h-[40px] flex justify-start cursor-pointer hover:bg-black hover:text-red-600 transition ease-in-out delay-100 items-center text-4xl px-5 py-[3.15rem] border border-gray-600 text-center">
+                                <Link href="#">
+                                    CONTACT
+                                </Link>
+                            </div>
+
+                        </div>
+                    ):(
+                    <div className="hidden"></div>
+                )}
+
                 <div className="w-[420px] flex justify-center items-center">
                     <nav className="w-full hidden justify-between  lg-max:flex  mr-[100px] lg-max:mr-[90px] lg-max:ml-[10px] 3xl-max:ml-[8px] ">
                         <Link className=" font-medium tracking-tighter text-gray-300 text-[17px] hover:text-[#FF4955] hover:underline" href="#">
@@ -49,6 +77,7 @@ export default function Header() {
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 22 22"><path fill="#FC3746" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z"/></svg>
                     )}
                 </button>
+
                 <div className="hidden lg-max:flex mr-2 lg-max:mr-0">
                     <div className=" relative w-20 h-20 flex justify-center items-center cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 1792 1792"><path fill="#FC3746" d="m1757 1408l35 313q3 28-16 50q-19 21-48 21H64q-29 0-48-21q-19-22-16-50l35-313zm-93-839l86 775H42l86-775q3-24 21-40.5t43-16.5h256v128q0 53 37.5 90.5T576 768t90.5-37.5T704 640V512h384v128q0 53 37.5 90.5T1216 768t90.5-37.5T1344 640V512h256q25 0 43 16.5t21 40.5m-384-185v256q0 26-19 45t-45 19t-45-19t-19-45V384q0-106-75-181t-181-75t-181 75t-75 181v256q0 26-19 45t-45 19t-45-19t-19-45V384q0-159 112.5-271.5T896 0t271.5 112.5T1280 384"/></svg>
@@ -70,7 +99,7 @@ export default function Header() {
                     </span>
 
                 </h1>
-                <button className="mt-[3.8rem] 3xl-max:mt-[6rem] text-3xl 3xl-max:text-[2rem]  font-Lr font-normal tracking-widest bg-[#FC3746] w-[149px] 3xl-max:w-[15.4rem] h-[50px] 3xl-max:h-[5.2rem]">
+                <button className="mt-[3.8rem] 3xl-max:mt-[6rem] text-3xl 3xl-max:text-[2rem]  font-Lr font-normal tracking-widest bg-[#FC3746] hover:bg-[#fc414f] w-[149px] 3xl-max:w-[15.4rem] h-[50px] 3xl-max:h-[5.2rem]">
                     SET REMINDER
                 </button>
             </div>
