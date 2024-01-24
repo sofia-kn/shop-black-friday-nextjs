@@ -24,7 +24,7 @@ export default function Header() {
         <div className="body-bg-image w-full h-screen flex flex-row justify-center items-center text-center">
             <header className="w-full flex h-[80px] absolute top-0  flex-row justify-between font-kr text-2xl px-5 mr-2 md:px-7  lg-max:px-[74px] 2xl-max:px-[90px] items-center">
                 <Image className="3xl-max:ml-3" src={logo} width={132} height={48} alt="logo"/>
-                {!openMenu ?(
+                {openMenu ?(
                         <div className="w-full absolute top-32 flex flex-col lg-max:hidden justify-center items-center left-0 h-[260px] bg-[#2A2A2A]">
                             <div className="w-full  h-[40px] flex justify-start cursor-pointer hover:bg-black hover:text-red-600 transition ease-in-out delay-100 items-center text-4xl px-5 py-[3.15rem] border border-gray-600 border-b-0 text-center">
                                 <Link href="#">
