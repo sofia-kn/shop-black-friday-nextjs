@@ -3,7 +3,7 @@ import MainDescription from "../elements/MainDescription";
 
 export default function BlackHeadphoneBanner() {
   return (
-    <div className="container relative bgImg">
+    <div className="container relative bgImg ">
       <div className=" text-white flex flex-col lg:flex-row-reverse justify-evenly items-center">
         <div className="p-6 pb-0 md-max:w-full md-max:max-w-60 xl:p-8">
           <Image

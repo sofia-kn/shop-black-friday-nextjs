@@ -4,8 +4,9 @@ import RedButton from "./RedButton";
 export default function MainDescription({ mt,m8, mTop,w, pText  }) {
   return (
     <div
-      className={`m-${m8} mt-${mTop} lg:w-1/2 flex justify-between flex-col lg:mt-[${mt}]`}
+      className={`m-${m8} mt-${mTop} lg:w-1/2 flex justify-between flex-col lg:mt-[${mt}] `}
     >
+      <div className="w-[600px]">
       <h3 className="text-[#FF4955] text-xl lg:text-3xl text-center font-Kr lg:text-left">
         Up to 50% Off
       </h3>
@@ -16,6 +17,7 @@ export default function MainDescription({ mt,m8, mTop,w, pText  }) {
       {pText}
       </p>
       <RedButton textCenter={'center'}/>
+      </div>
     </div>
   );
 }
