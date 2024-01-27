@@ -127,6 +127,14 @@ body{
   aspect-ratio: 1;
   width:100%;
 }
+
+.hover:hover .showBag{
+  display: block;
+}
+
+.showAddToCart:hover{
+  opacity: 1;
+}
 /* @layer components {
   .main{
     @apply flex font-medium leading-[2.3rem] min-h-screen flex-col items-center justify-between p-24  font-kaushanScriptRegular

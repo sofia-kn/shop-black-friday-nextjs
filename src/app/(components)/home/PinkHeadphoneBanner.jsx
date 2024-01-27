@@ -3,7 +3,7 @@ import MainDescription from "../elements/MainDescription";
 
 export default function PinkHeadphoneBanner() {
   return (
-    <div className="container w-full relative  mt-16  px-5 mr-2 md:px-7  lg-max:px-[74px] 2xl-max:px-[90px]">
+    <div className="w-full relative  mt-16  px-5 mr-2 md:px-7  lg-max:px-[74px] 2xl-max:px-[90px]">
       <div className=" text-white flex flex-col lg:flex-row-reverse justify-evenly items-center">
         <div className="bg-slate-50 relative w-full h-[300px] lg:w-1/2 lg:h-[700px]">
           <Image
