@@ -37,12 +37,12 @@ export default function ProductCard() {
           </svg>
         </span>
 
-        <span
-          className="bg-white p-3 absolute top-6 left-[8rem] text-black text-[1rem]
+        {/* <span
+          className="bg-white p-3 absolute top-6 left-[2rem] text-black text-[1rem]
          lg:text-[1.5rem] lg:left-[15rem] lg:top-9 md:left-[4rem] md:top-5"
         >
           Add To Cart
-        </span>
+        </span> */}
       </div>
       <div>
         <h2 className="text-[2rem] font-Lr ">NEXATONE HEADSETS</h2>
