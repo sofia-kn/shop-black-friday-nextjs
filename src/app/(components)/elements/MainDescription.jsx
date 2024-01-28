@@ -16,7 +16,7 @@ export default function MainDescription({ mt,m8, mTop,w, pText  }) {
       <p className={`lg:w-${w} text-center w-full text-sm md:text-xl lg:text-xl font-M text-slate-100 lg:text-left mb-6`}>
       {pText}
       </p>
-      <RedButton textCenter={'center'}/>
+      <RedButton textCenter={'center'} textLeft={'left'}/>
    
     </div>
   );
