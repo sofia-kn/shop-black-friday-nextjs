@@ -13,7 +13,7 @@ export default function MainDescription({ mt, mTop, pText }) {
         GRAB YOUR FAVORITES BEFORE THEY'RE GONE
       </h2>
       <p
-        className={`pr-[250px] text-center w-full text-[1.4rem] md:text-xl lg:text-xl font-M text-slate-100 lg:text-left mb-6`}
+        className={`xl:pr-[250px] text-center w-full text-[1.4rem] md:text-xl lg:text-xl font-M text-slate-100 lg:text-left mb-6`}
       >
         {pText}
       </p> 
