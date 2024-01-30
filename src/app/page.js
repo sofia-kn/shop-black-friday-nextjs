@@ -1,7 +1,7 @@
 "use client";
-import ProductCard from "./(components)/elements/ProductCard.jsx";
 import BlackFridayMadness from "./(components)/home/BlackFridayMadness.jsx";
 import BlackHeadphoneBanner from "./(components)/home/BlackHeadphoneBanner";
+import CustomerTestimonials from "./(components)/home/CustomerTestimonials.jsx";
 import PinkHeadphoneBanner from "./(components)/home/PinkHeadphoneBanner";
 import TimeOffer from "./(components)/home/TimeOffer.jsx";
 import Timer from "./(components)/home/Timer";
@@ -20,6 +20,15 @@ export default function Home() {
       </div>
       <div className="w-full px-5 mr-2 md:px-7 lg-max:px-[74px] 2xl-max:px-[90px] mt-[7rem]">
         <TimeOffer />
+      </div>
+      <div className="w-full mt-[7rem] px-5 mr-2 md:px-7  lg-max:px-[74px] 2xl-max:px-[90px]">
+        <WhyChoseBlackFriday/>
+      </div>
+      <div className="w-full mt-[7rem] px-5 mr-2 md:px-7  lg-max:px-[74px] 2xl-max:px-[90px]">
+       <CustomerTestimonials/>
+      </div>
+      <div className="w-full mt-[7rem] px-5 mr-2 md:px-7  lg-max:px-[74px] 2xl-max:px-[90px]">
+        <WhyChoseBlackFriday/>
       </div>
       <div className="w-full mt-[7rem] px-5 mr-2 md:px-7  lg-max:px-[74px] 2xl-max:px-[90px]">
         <WhyChoseBlackFriday/>
