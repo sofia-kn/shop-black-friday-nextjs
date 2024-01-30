@@ -16,7 +16,6 @@ export default function PinkHeadphoneBanner() {
 
         <MainDescription
           mt={"16rem"}
-          w={"4/5"}
           pText={
             " You can trust us to bring you the latest technology at unbeatable. Don’t miss this limited-time opportunity to upgrade your audio game."
           }
