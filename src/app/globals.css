@@ -159,6 +159,13 @@ body{
  background-size: cover;
 
 }
+
+.blackFridaySaleImage{
+  background-image: url(/assets/images/bg-body.jpg);
+  background-position:top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* @layer components {
   .main{
     @apply flex font-medium leading-[2.3rem] min-h-screen flex-col items-center justify-between p-24  font-kaushanScriptRegular

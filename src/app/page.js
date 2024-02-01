@@ -27,12 +27,7 @@ export default function Home() {
       <div className="w-full mt-[7rem] px-5 mr-2 md:px-7  lg-max:px-[74px] 2xl-max:px-[90px]">
        <CustomerTestimonials/>
       </div>
-      <div className="w-full mt-[7rem] px-5 mr-2 md:px-7  lg-max:px-[74px] 2xl-max:px-[90px]">
-        <WhyChoseBlackFriday/>
-      </div>
-      <div className="w-full mt-[7rem] px-5 mr-2 md:px-7  lg-max:px-[74px] 2xl-max:px-[90px]">
-        <WhyChoseBlackFriday/>
-      </div>
+      
     </main>
   );
 }
