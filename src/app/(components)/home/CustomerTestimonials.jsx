@@ -3,7 +3,7 @@ import CustomerComment from "../elements/CustomerComment";
 
 export default function CustomerTestimonials() {
   return (
-    <div className="w-full relative py-[4rem] px-[2rem] lg:py-[9rem] lg:px-[7rem] TestimonialImage">
+    <div className="w-full relative py-[4rem] px-[2rem] lg:py-[9rem] lg:px-[7rem] TestimonialImage top-[7rem] ">
       <div className="sticky z-10">
         <div className="w-full basis-1/2">
           <h3 className="text-[#FF4955] text-[2rem] lg:text-[2.5rem] text-left lg:text-left font-Kr lg:mb-[1rem]">
