@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer {
-  
   @font-face {
     font-family: "kaushanScript-Regular";
     src: url("/assets/fonts/Kaushan_Script/KaushanScript-Regular.ttf");
@@ -18,7 +17,7 @@
     font-family: "Manrope";
     src: url("/assets/fonts/Manrope/Manrope-VariableFont_wght.ttf");
   }
- /*
+  /*
   @font-face {
     font-family: "Vazirmatn-Bold";
     src: url("/font/Vazirmatn-Bold.ttf");
@@ -54,13 +53,12 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-} 
+}
 
 html {
   /* font-family: 'kaushanScriptRegular', serif; */
- 
 }
-body{
+body {
   background-color: #000;
   color: #fff;
 }
@@ -69,79 +67,79 @@ body{
   color: white;
   background: #fc3746;
 }
-.body-bg-image{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.85)), url("/assets/images/bg-body.jpg");
+.body-bg-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.85)),
+    url("/assets/images/bg-body.jpg");
   background-size: 283%;
   background-repeat: no-repeat;
   background-position: top;
   height: 100%;
 }
-@media screen and (min-width: 485px){
-  .body-bg-image{
+@media screen and (min-width: 485px) {
+  .body-bg-image {
     background-size: 213%;
   }
 }
-@media screen and (min-width: 545px){
-  .body-bg-image{
+@media screen and (min-width: 545px) {
+  .body-bg-image {
     background-size: 285%;
   }
 }
-@media screen and (min-width: 920px){
-  .body-bg-image{
+@media screen and (min-width: 920px) {
+  .body-bg-image {
     background-size: 187%;
   }
 }
-@media screen and (min-width: 1200px){
-  .body-bg-image{
+@media screen and (min-width: 1200px) {
+  .body-bg-image {
     background-size: 138%;
   }
 }
-@media screen and (min-width: 1320px){
-  .body-bg-image{
+@media screen and (min-width: 1320px) {
+  .body-bg-image {
     background-size: 126%;
   }
 }
-@media screen and (min-width: 1500px){
-  .body-bg-image{
+@media screen and (min-width: 1500px) {
+  .body-bg-image {
     background-size: 110%;
   }
 }
 
-.bgImg{
+.bgImg {
   background-image: url(/assets/images/bg-006.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   /* height: 88rem; */
 }
-.bgImgPink{
+.bgImgPink {
   background-image: url(/assets/images/headphones-img-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: auto;
-
 }
 
-.square{
+.square {
   aspect-ratio: 1;
-  width:100%;
+  width: 100%;
 }
 
-.hover:hover .showBag{
+.hover:hover .showBag {
   display: block;
 }
 
-.showAddToCart:hover{
+.showAddToCart:hover {
   opacity: 1;
 }
 
-.centerTransform{
-  transform: translate(-50% , -50%);
+.centerTransform {
+  transform: translate(-50%, -50%);
 }
 
-.overlay{
-  position: absolute; 
+.overlay {
+  position: absolute;
   left: 0;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.7); /* Black see-through */
@@ -151,13 +149,20 @@ body{
   top: 0;
 }
 
-.TestimonialImage{
-  background-image: url(/assets/images/testimonials.jpg);
- background-attachment: fixed;
- background-position:top center;
- background-repeat: no-repeat;
- background-size: cover;
 
+.TestimonialImage {
+  background-image: url(/assets/images/testimonials.jpg);
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blackFridaySaleImage {
+  background-image: url(/assets/images/bg-body.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* @layer components {
   .main{
