@@ -1,7 +1,7 @@
-import React from "react";
+import * as React from 'react';
 import RedButton from "./RedButton";
 
-export default function MainDescription({ mt, mTop, pText }) {
+export default function MainDescription(mt:number, mTop:number, pText:string ) {
   return (
     <div
       className={`m-8 mt-${mTop} lg:w-1/2 flex justify-between flex-col lg:mt-[${mt}] `}

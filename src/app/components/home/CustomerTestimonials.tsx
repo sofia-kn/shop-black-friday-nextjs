@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from 'react';
 import CustomerComment from "../elements/CustomerComment";
 
 export default function CustomerTestimonials() {

@@ -1,3 +1,4 @@
+import * as React from 'react';
 import Image from "next/image";
 import MainDescription from "../elements/MainDescription";
 
