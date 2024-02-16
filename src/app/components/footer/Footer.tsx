@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="border-t-[0.5px] text-center px-[4rem] py-[4rem] border-gray-600">
+    <div className="border-t-[0.5px] text-center px-[4rem] py-[4rem] border-gray-600 font-M">
       <p className="text-2xl text-slate-300">
         Copyright © 2024 Black Friday | Powered by Black Friday
       </p>
