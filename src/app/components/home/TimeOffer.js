@@ -1,17 +1,12 @@
-import React from "react";
-import Image from "next/image";
-import RedButton from "../elements/RedButton";
-
-export default function TimeOffer() {
-  return (
-    <>
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = require("react");
+var image_1 = require("next/image");
+var RedButton_1 = require("../elements/RedButton");
+function TimeOffer() {
+    return (<>
       <div className="relative w-full h-[300px] lg:h-[650px] px-5 mr-2 md:px-7 lg-max:px-[74px] 2xl-max:px-[90px]">
-        <Image
-          src="/assets/images/bg-07.jpg"
-          fill
-          className="object-cover bg-center"
-          alt="image"
-        />
+        <image_1.default src="/assets/images/bg-07.jpg" fill className="object-cover bg-center" alt="image"/>
         <div className="absolute top-[50%] left-[50%] centerTransform z-10">
           <h3 className="text-[#FF4955]  text-[2rem] lg:text-5xl text-center font-Kr xl:mb-[2.5rem]">
             Limmited-Time Offer
@@ -25,10 +20,10 @@ export default function TimeOffer() {
             <span className="lg:text-5xl">ACT FAST BEFORE THEY'RE GONE</span>
           </h2>
 
-          <RedButton textCenter={"center"} />
+          <RedButton_1.default textCenter={"center"}/>
         </div>
         <div className="overlay"></div>
       </div>
-    </>
-  );
+    </>);
 }
+exports.default = TimeOffer;

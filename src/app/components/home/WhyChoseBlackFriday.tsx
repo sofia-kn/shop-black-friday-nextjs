@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from 'react';
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import AdvantagesOfBlackShop from "../elements/AdvantagesOfBlackShop";
 import LockIcon from "@mui/icons-material/Lock";

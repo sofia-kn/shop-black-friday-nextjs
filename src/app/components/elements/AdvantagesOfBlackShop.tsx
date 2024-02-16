@@ -1,6 +1,6 @@
-import React from "react";
+import * as React from 'react';
 
-export default function AdvantagesOfBlackShop({ icon, title, description }) {
+export default function AdvantagesOfBlackShop( icon:any, title:string, description:string) {
   return (
     <div className="flex flex-col">
       <span>{icon}</span>
