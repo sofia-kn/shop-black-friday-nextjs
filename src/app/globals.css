@@ -70,10 +70,13 @@ body {
 .body-bg-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.85)),
     url("/assets/images/bg-body.jpg");
-  background-size: 283%;
+  /* background-size: 283%; */
   background-repeat: no-repeat;
   background-position: top;
-  height: 100%;
+  background-size: cover;
+  /* height: 100%; */
+  /* z-index: 1000; */
+
 }
 @media screen and (min-width: 485px) {
   .body-bg-image {
@@ -148,7 +151,6 @@ body {
   z-index: 0;
   top: 0;
 }
-
 
 .TestimonialImage {
   background-image: url(/assets/images/testimonials.jpg);
