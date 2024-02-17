@@ -30,7 +30,7 @@ const Home:React.FC = () =>{
         <div className="w-full mt-[7rem] px-5 mr-2 md:px-7  lg-max:px-[74px] 2xl-max:px-[90px]">
           <CustomerTestimonials />
         </div>
-        <div className="body-bg-image py-[25rem] px-[2rem] w-full h-screen flex flex-row justify-center items-center">
+        <div className="body-bg-image pt-[25rem] px-[2rem] mb-[8rem] w-full h-screen flex flex-row justify-center items-center">
           <BlackFridaySale />
         </div>
       </main>
