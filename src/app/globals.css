@@ -166,6 +166,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.borderRed{
+  border: 0.5px solid #FF4955;
+}
 /* @layer components {
   .main{
     @apply flex font-medium leading-[2.3rem] min-h-screen flex-col items-center justify-between p-24  font-kaushanScriptRegular

@@ -1,6 +1,7 @@
-export default function page() {
-  return (
-    <>
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+function page() {
+    return (<>
       <div className="absolute bottom-[45rem] md:bottom-[7rem] xl:bottom-[7rem] flex w-full flex-col justify-center items-center  mt-[115px] md:mt-[157px] lg:mt-[175px] lg-max:mt-[212px] 3xl-max:mt-[215px]  px-2">
         <p className="text-[#FF4955] mb-7 3xl-max:mb-6  font-Kr text-[20px] lg:text-[23px] lg-max:text-[30px]">
         A Few Words
@@ -11,6 +12,6 @@ export default function page() {
         <span className="w-[60px] borderRed mt-[3rem] md:mt-[1rem]"></span>
       </div>
 
-    </>
-  );
+    </>);
 }
+exports.default = page;
