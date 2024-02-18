@@ -167,9 +167,24 @@ body {
   background-size: cover;
 }
 
+.aboutPageImage{
+  background-image: url(/assets/images/about-02.jpg);
+  /* background-attachment: fixed; */
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .borderRed{
   border: 0.5px solid #FF4955;
 }
+
+@layer components{
+  .customContainer{
+ @apply px-5 mr-2 md:px-7 lg-max:px-[74px] 2xl-max:px-[90px]
+  }
+}
+
 /* @layer components {
   .main{
     @apply flex font-medium leading-[2.3rem] min-h-screen flex-col items-center justify-between p-24  font-kaushanScriptRegular
