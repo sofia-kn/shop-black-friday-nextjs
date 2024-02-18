@@ -9,11 +9,12 @@ function page() {
         <h1 className="text-[5.6rem] lg:text-[10rem] lg-max:text-[11rem]  leading-[5.1rem] lg:leading-[9rem] lg-max:leading-[10rem] tracking-[0] font-Lr font-normal uppercase ">
           ABOUT US
         </h1>
-        <span className="w-[60px] borderRed mt-[3rem] md:mt-[4rem]"></span>
+        <span className="w-[6rem] borderRed mt-[3rem] md:mt-[4rem]"></span>
       </div>
 
       <main className="flex flex-col items-center justify-between relative bottom-[35rem] lg:mt-[5rem] customContainer">
         <div className="w-full h-[25.5rem] relative aboutPageImage xl:bg-fixed xl:h-[36.5rem] "></div>
+
         <div className="lg:flex lg:justify-between lg:items-center lg:mt-[8rem]">
           <div className="mt-8 md:mt-[7rem] lg:basis-[50%] lg:mt-0">
             <h3 className="text-[#FF4955] text-[2rem] md:text-[2.5rem] font-Kr">
@@ -46,6 +47,19 @@ function page() {
               experience.
             </p>
           </div>
+        </div>
+
+        <div className="grid relative w-full aboutPageBoundlessImage h-[42rem] mt-10">
+          <div className="m-auto text-center px-[3rem] z-10">
+            <h4 className="text-[2.5rem] font-Lr uppercase">boundless love for saving</h4>
+            <h3 className="font-Kr text-[2rem]">
+              We've scoured the market for the finest products, establishing
+              partnerships with trusted brands that share our commitment to
+              excellence!
+            </h3>
+            <span className="flex  borderWhite mt-[3rem] md:mt-[4rem]"></span>
+          </div>
+          <div className="overlay"></div>
         </div>
       </main>
     </>);
