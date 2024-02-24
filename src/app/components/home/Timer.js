@@ -9,7 +9,7 @@ function Timer() {
     var _d = (0, react_1.useState)(0), timerMinutes = _d[0], setTimerMinutes = _d[1];
     var _e = (0, react_1.useState)(0), timerSeconds = _e[0], setTimerSeconds = _e[1];
     (0, react_1.useEffect)(function () {
-        var target = new Date("02/13/2024 18:24:00");
+        var target = new Date("05/25/2024 18:24:00");
         var interval = setInterval(function () {
             var now = new Date();
             var difference = target.getTime() - now.getTime();
