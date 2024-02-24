@@ -179,6 +179,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.aboutPageOurValuesImage{
+  background-image: url(/assets/images/about-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .borderRed{
   border: 0.5px solid #FF4955;
