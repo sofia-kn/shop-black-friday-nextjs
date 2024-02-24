@@ -1,9 +1,9 @@
-import BlackFridaySale from "../components/home/BlackFridaySale";
-import WhyChoseBlackFriday from "../components/home/WhyChoseBlackFriday";
-
-export default function page() {
-  return (
-    <>
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var BlackFridaySale_1 = require("../components/home/BlackFridaySale");
+var WhyChoseBlackFriday_1 = require("../components/home/WhyChoseBlackFriday");
+function page() {
+    return (<>
       <div className="absolute bottom-[50%] top-[50%] flex w-full flex-col justify-center items-center  px-2">
         <p className="text-[#FF4955] mb-7 3xl-max:mb-6  font-Kr text-[20px] lg:text-[23px] lg-max:text-[30px]">
           A Few Words
@@ -105,12 +105,12 @@ export default function page() {
         </div>
         {/*End our values Section */}
         <div className="xl:mt-[8rem]">
-          <WhyChoseBlackFriday />
+          <WhyChoseBlackFriday_1.default />
         </div>
       </main>
       <div className="body-bg-image px-[2rem] w-full h-screen xl:mt-[12rem] flex flex-row justify-center items-center">
-        <BlackFridaySale />
+        <BlackFridaySale_1.default />
       </div>
-    </>
-  );
+    </>);
 }
+exports.default = page;
