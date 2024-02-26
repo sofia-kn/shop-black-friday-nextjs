@@ -1,8 +1,8 @@
-import React from "react";
-
-export default function page() {
-  return (
-    <>
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var react_1 = require("react");
+function page() {
+    return (<>
       <div className="absolute bottom-[50%] top-[10%] flex w-full flex-col justify-center items-center  px-2">
         <p className="text-[#FF4955] mb-7 3xl-max:mb-6  font-Kr text-[20px] lg:text-[23px] lg-max:text-[30px]">
           A Few Words
@@ -12,6 +12,6 @@ export default function page() {
         </h1>
         <span className="w-[6rem] borderRed mt-[3rem] md:mt-[4rem]"></span>
       </div>
-    </>
-  );
+    </>);
 }
+exports.default = page;

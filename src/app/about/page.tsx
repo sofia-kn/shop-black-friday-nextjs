@@ -4,7 +4,7 @@ import WhyChoseBlackFriday from "../components/home/WhyChoseBlackFriday";
 export default function page() {
   return (
     <>
-      <div className="absolute bottom-[50%] top-[50%] flex w-full flex-col justify-center items-center  px-2">
+      <div className="absolute bottom-[50%] top-[10%] flex w-full flex-col justify-center items-center  px-2">
         <p className="text-[#FF4955] mb-7 3xl-max:mb-6  font-Kr text-[20px] lg:text-[23px] lg-max:text-[30px]">
           A Few Words
         </p>
@@ -15,7 +15,7 @@ export default function page() {
       </div>
 
       <main className="flex flex-col items-center justify-between relative lg:mt-[5rem] customContainer">
-        <div className="w-full h-[25.5rem] relative aboutPageImage xl:bg-fixed xl:h-[36.5rem] "></div>
+        <div className="w-full h-[25.5rem] relative aboutPageImage xl:bg-fixed xl:h-[36.5rem] mt-[-38rem]"></div>
 
         <div className="lg:flex lg:justify-between lg:items-center lg:mt-[10rem]">
           <div className="mt-8 md:mt-[7rem] lg:basis-[50%] lg:mt-0">
@@ -56,7 +56,7 @@ export default function page() {
           </div>
         </div>
         {/*Start Boundless Section */}
-        <div className="grid relative w-full aboutPageBoundlessImage h-[42rem] xl:h-[56rem] mt-10 xl:mt-[10rem] lg:px-[9rem] xl:px-[15rem]">
+        <div className="grid relative w-full aboutPageBoundlessImage h-[42rem] xl:h-[56rem] mt-[7rem] xl:mt-[10rem] lg:px-[9rem] xl:px-[15rem]">
           <div className="m-auto text-center px-[3rem] z-10">
             <h4 className="text-[2.5rem] font-Lr uppercase">
               boundless love for saving
@@ -104,11 +104,13 @@ export default function page() {
           </div>
         </div>
         {/*End our values Section */}
-        <div className="xl:mt-[8rem]">
+        {/*Start WhyChoseBlackFriday*/}
+        <div className="mt-[7rem] xl:mt-[8rem]">
           <WhyChoseBlackFriday />
         </div>
+        {/*End WhyChoseBlackFriday*/}
       </main>
-      <div className="body-bg-image px-[2rem] w-full h-screen xl:mt-[12rem] flex flex-row justify-center items-center">
+      <div className="body-bg-image px-[2rem] w-full h-screen mt-[7rem] xl:mt-[12rem] flex flex-row justify-center items-center">
         <BlackFridaySale />
       </div>
     </>
