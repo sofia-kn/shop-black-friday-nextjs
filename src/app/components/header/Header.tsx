@@ -29,7 +29,7 @@ export default function Header() {
           alt="logo"
         />
         {openMenu ? (
-          <div className="w-full absolute top-32 flex flex-col lg-max:hidden justify-center items-center left-0 h-[260px] bg-[#2A2A2A]">
+          <div className="w-full absolute top-32 flex flex-col lg-max:hidden justify-center items-center left-0 h-[260px] bg-[#2A2A2A] ">
             <div className="w-full  h-[40px] flex justify-start cursor-pointer hover:bg-black hover:text-red-600 transition ease-in-out delay-100 items-center text-4xl px-5 py-[3.15rem] border border-gray-600 border-b-0 text-center">
               <Link href="/">HOME</Link>
             </div>
