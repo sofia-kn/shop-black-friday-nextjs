@@ -1,6 +1,17 @@
-import * as React from 'react';
+"use client";
 
-export default function AdvantagesOfBlackShop( icon:any, title:string, description:string) {
+import { FC } from "react";
+
+interface AdvantagesOfBlackShopProps {
+  icon: React.JSX.Element;
+  title: string;
+  description: string;
+}
+const AdvantagesOfBlackShop: FC<AdvantagesOfBlackShopProps> = ({
+  icon,
+  title,
+  description,
+}) => {
   return (
     <div className="flex flex-col">
       <span>{icon}</span>
@@ -8,4 +19,6 @@ export default function AdvantagesOfBlackShop( icon:any, title:string, descripti
       <p className="text-[1.4rem] font-M text-slate-300">{description}</p>
     </div>
   );
-}
+};
+
+export default AdvantagesOfBlackShop;
