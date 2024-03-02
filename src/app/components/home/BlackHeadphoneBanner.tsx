@@ -21,6 +21,7 @@ export default function BlackHeadphoneBanner() {
           pText={
             "You can trust us to bring you the latest technology at unbeatable prices. Don’t miss this limited-time opportunity to upgrade your audio game. Grab your perfect pair now!"
           }
+          mt={''}
         />
       </div>
     </div>
