@@ -1,9 +1,14 @@
-import * as React from 'react';
+"use client";
+
 import GradeIcon from "@mui/icons-material/Grade";
+import { FC } from "react";
 
+interface CustomerCommentProps {
+  comment: string;
+  name: string;
+}
 
-
-export default function CustomerComment( comment:string, name:string, mt:number ) {
+const CustomerComment: FC<CustomerCommentProps> = ({ comment, name }) => {
   return (
     <div>
       <div>
@@ -19,4 +24,6 @@ export default function CustomerComment( comment:string, name:string, mt:number 
       <span className="text-[1.4rem] font-M text-slate-300">{name}</span>
     </div>
   );
-}
+};
+
+export default CustomerComment;
