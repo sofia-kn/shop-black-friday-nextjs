@@ -10,7 +10,7 @@ function PinkHeadphoneBanner() {
           <image_1.default src="/assets/images/headphones-img-02.jpg" fill className="object-cover bg-center" alt="image"/>
         </div>
 
-        <MainDescription_1.default mt={"16rem"} pText={" You can trust us to bring you the latest technology at unbeatable. Don’t miss this limited-time opportunity to upgrade your audio game."}/>
+        <MainDescription_1.default mt={"16rem"} pText={" You can trust us to bring you the latest technology at unbeatable. Don’t miss this limited-time opportunity to upgrade your audio game."} mTop={''}/>
       </div>
     </div>);
 }

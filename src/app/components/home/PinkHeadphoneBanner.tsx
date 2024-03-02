@@ -20,6 +20,7 @@ export default function PinkHeadphoneBanner() {
           pText={
             " You can trust us to bring you the latest technology at unbeatable. Don’t miss this limited-time opportunity to upgrade your audio game."
           }
+          mTop={''}
         />
       </div>
     </div>

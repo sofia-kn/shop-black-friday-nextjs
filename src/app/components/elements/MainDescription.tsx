@@ -6,12 +6,13 @@ import { FC } from "react";
 interface MainDescriptionProps {
   mTop: string;
   pText: string;
+  mt:string
 }
 
-const MainDescription: FC<MainDescriptionProps> = ({ mTop, pText }) => {
+const MainDescription: FC<MainDescriptionProps> = ({ mTop, pText, mt }) => {
   return (
     <div
-      className={`m-8 mt-${mTop} lg:w-1/2 flex justify-between flex-col lg:mt-[8] `}
+      className={`m-8 mt-${mTop} lg:w-1/2 flex justify-between flex-col lg:mt-[${mt}] `}
     >
       <h3 className="text-[#FF4955] text-[2rem] lg:text-[2.5rem] sx-max:text-center font-Kr">
         Up to 50% Off
