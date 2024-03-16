@@ -13,6 +13,12 @@ const data = [
   "entry 8",
   "entry 9",
   "entry 10",
+  "entry 11",
+  "entry 12",
+  "entry 13",
+  "entry 14",
+  "entry 15",
+  "entry 16",
 ];
 
 export default function page({
@@ -21,11 +27,13 @@ export default function page({
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
   const page = searchParams["page"] ?? "1";
-  const per_page = searchParams["per_page"] ?? "5";
+  const per_page = searchParams["per_page"] ?? "8";
   const start = (Number(page) - 1) * Number(per_page); //0, 5, 10....
   const end = start + Number(per_page); //5, 10, 15....
 
   const entries = data.slice(start, end);
+  console.log(entries);
+
   return (
     <>
       <div className="absolute bottom-[50%] top-[10%] flex w-full flex-col justify-center items-center  px-2">
@@ -44,15 +52,13 @@ export default function page({
       <main className="flex flex-col items-center justify-between relative lg:mt-[5rem] customContainer">
         <div className=" mt-[-38rem]">
           <span className="text-[1.5rem] text-gray-300">
-            Showing 1–8 of 16 results
+            {page === "1"
+              ? "Showing 1–8 of 16 results"
+              : "Showing 9–16 of 16 results"}
           </span>
-          <div className="grid grid-cols-2 gap-8 mt-[3rem]">
+          <div className="grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-4 lg:grid-rows-2 gap-8 mt-[3rem]">
             {entries.map((entry) => (
-              <>
-                <ProductCard />
-                <ProductCard />
-              </>
-              // <p key={entry}>{entry}</p>
+              <ProductCard key={entry} />
             ))}
           </div>
           <div className="flex flex-col gap-2 items-center text-[2rem]">
