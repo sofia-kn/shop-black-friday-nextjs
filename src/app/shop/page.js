@@ -43,7 +43,7 @@ function page(_a) {
           <span className="text-[1.5rem] text-gray-300">
             Showing 1–8 of 16 results
           </span>
-          <div className="grid grid-cols-2 grid-rows-2 gap-8 mt-[3rem]">
+          <div className="grid grid-cols-2 gap-8 mt-[3rem]">
             {entries.map(function (entry) { return (<>
                 <ProductCard_1.default />
                 <ProductCard_1.default />
