@@ -43,19 +43,15 @@ function page(_a) {
           <span className="text-[1.5rem] text-gray-300">
             Showing 1–8 of 16 results
           </span>
-          <div className="grid grid-cols-2 gap-8 mt-[3rem]">
-            <ProductCard_1.default />
-            <ProductCard_1.default />
-            <ProductCard_1.default />
-            <ProductCard_1.default />
-            <ProductCard_1.default />
-            <ProductCard_1.default />
-            <ProductCard_1.default />
-            <ProductCard_1.default />
+          <div className="grid grid-cols-2 grid-rows-2 gap-8 mt-[3rem]">
+            {entries.map(function (entry) { return (<>
+                <ProductCard_1.default />
+                <ProductCard_1.default />
+              </>
+        // <p key={entry}>{entry}</p>
+        ); })}
           </div>
           <div className="flex flex-col gap-2 items-center text-[2rem]">
-            {entries.map(function (entry) { return (<p key={entry}>{entry}</p>); })}
-
             <PaginationControls_1.default hasNextPage={end < data.length} hasPrevPage={start > 0}/>
           </div>
         </div>

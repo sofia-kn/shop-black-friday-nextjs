@@ -47,20 +47,15 @@ export default function page({
             Showing 1–8 of 16 results
           </span>
           <div className="grid grid-cols-2 gap-8 mt-[3rem]">
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            {entries.map((entry) => (
+              <>
+                <ProductCard />
+                <ProductCard />
+              </>
+              // <p key={entry}>{entry}</p>
+            ))}
           </div>
           <div className="flex flex-col gap-2 items-center text-[2rem]">
-            {entries.map((entry) => (
-              <p key={entry}>{entry}</p>
-            ))}
-
             <PaginationControls
               hasNextPage={end < data.length}
               hasPrevPage={start > 0}
