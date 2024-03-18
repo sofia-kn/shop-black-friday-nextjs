@@ -1,7 +1,6 @@
 "use client";
-import { FC, useState, useEffect } from "react";
+import { FC} from "react";
 import Image from "next/image";
-import axios from "axios";
 
 interface ProductCardProps {
   offer: number;
@@ -18,18 +17,6 @@ const ProductCard: FC<ProductCardProps> = ({
   offerPrice,
   title,
 }) => {
-  const [data, setData] = useState([]);
-
-  const axiosGet = async () => {
-    //it rendered many times
-    axios
-      .get("https://api.jsonbin.io/v3/b/65f81c611f5677401f3f2e29")
-      .then((res) => setData(res.data.record));
-  };
-  useEffect(() => {
-    axiosGet();
-  }, []);
-
   return (
     <>
       <div>
@@ -60,13 +47,6 @@ const ProductCard: FC<ProductCardProps> = ({
               ></path>
             </svg>
           </span>
-
-          {/* <span
-          className="bg-white p-3 absolute top-6 left-[2rem] text-black text-[1rem]
-         lg:text-[1.5rem] lg:left-[15rem] lg:top-9 md:left-[4rem] md:top-5"
-        >
-          Add To Cart
-        </span> */}
         </div>
         <div>
           <h2 className="text-[2rem] font-Lr ">{title}</h2>
@@ -78,7 +58,6 @@ const ProductCard: FC<ProductCardProps> = ({
           </p>
         </div>
       </div>
-      ;
     </>
   );
 };

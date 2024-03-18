@@ -52,16 +52,14 @@ export default function page({
           </span>
           <div className="grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-4 lg:grid-rows-2 gap-8 mt-[3rem]">
             {entries.map((entry: any) => (
-            
-                <ProductCard
-                  key={entry.id}
-                  offer={entry.offer}
-                  image={entry.image}
-                  realPrice={entry.realPrice}
-                  offerPrice={entry.offerPrice}
-                  title={entry.title}
-                />
-              
+              <ProductCard
+                key={entry.id}
+                offer={entry.offer}
+                image={entry.image}
+                realPrice={entry.realPrice}
+                offerPrice={entry.offerPrice}
+                title={entry.title}
+              />
             ))}
           </div>
           <div className="flex  gap-2 items-center text-[2rem] mt-[7rem] mb-[1rem]">
