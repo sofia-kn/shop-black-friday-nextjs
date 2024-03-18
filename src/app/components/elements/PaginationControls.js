@@ -23,9 +23,6 @@ var PaginationControls = function (_a) {
       <button className="borderRed px-[1.3rem] py-[0.5rem] text-[#FF4955] text-[1.5rem] hover:bg-red-500 hover:text-white">
         →
       </button>
-      <div>
-        {page} / {Math.ceil(10 / Number(per_page))}
-      </div>
     </div>);
 };
 exports.default = PaginationControls;

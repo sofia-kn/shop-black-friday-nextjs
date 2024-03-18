@@ -61,7 +61,7 @@ export default function page({
               <ProductCard key={entry} />
             ))}
           </div>
-          <div className="flex flex-col gap-2 items-center text-[2rem]">
+          <div className="flex  gap-2 items-center text-[2rem] mt-[7rem] mb-[1rem]">
             <PaginationControls
               hasNextPage={end < data.length}
               hasPrevPage={start > 0}
