@@ -1,19 +1,9 @@
+"use client";
 import React from "react";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import ProductCard from "../components/elements/ProductCard";
 import PaginationControls from "../components/elements/PaginationControls";
-const data = [
-  "entry 1",
-  "entry 2",
-  "entry 3",
-  "entry 4",
-  "entry 5",
-  "entry 6",
-  "entry 7",
-  "entry 8",
-  "entry 9",
-  "entry 10",
-];
+import axios from "axios";
 
 export default function page({
   searchParams,
@@ -21,11 +11,23 @@ export default function page({
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
   const page = searchParams["page"] ?? "1";
-  const per_page = searchParams["per_page"] ?? "5";
+  const per_page = searchParams["per_page"] ?? "8";
   const start = (Number(page) - 1) * Number(per_page); //0, 5, 10....
   const end = start + Number(per_page); //5, 10, 15....
+  const [data, setData] = React.useState([]);
 
   const entries = data.slice(start, end);
+  // console.log(entries);
+
+  const axiosGet = async () => {
+    //it rendered many times
+    axios
+      .get("https://api.jsonbin.io/v3/b/65f81c611f5677401f3f2e29")
+      .then((res) => setData(res.data.record));
+  };
+  React.useEffect(() => {
+    axiosGet();
+  }, []);
   return (
     <>
       <div className="absolute bottom-[50%] top-[10%] flex w-full flex-col justify-center items-center  px-2">
@@ -44,23 +46,23 @@ export default function page({
       <main className="flex flex-col items-center justify-between relative lg:mt-[5rem] customContainer">
         <div className=" mt-[-38rem]">
           <span className="text-[1.5rem] text-gray-300">
-            Showing 1–8 of 16 results
+            {page === "1"
+              ? "Showing 1–8 of 16 results"
+              : "Showing 9–16 of 16 results"}
           </span>
-          <div className="grid grid-cols-2 gap-8 mt-[3rem]">
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </div>
-          <div className="flex flex-col gap-2 items-center text-[2rem]">
-            {entries.map((entry) => (
-              <p key={entry}>{entry}</p>
+          <div className="grid grid-cols-2 grid-rows-4 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-4 lg:grid-rows-2 gap-8 mt-[3rem]">
+            {entries.map((entry: any) => (
+              <ProductCard
+                key={entry.id}
+                offer={entry.offer}
+                image={entry.image}
+                realPrice={entry.realPrice}
+                offerPrice={entry.offerPrice}
+                title={entry.title}
+              />
             ))}
-
+          </div>
+          <div className="flex  gap-2 items-center text-[2rem] mt-[7rem] mb-[1rem]">
             <PaginationControls
               hasNextPage={end < data.length}
               hasPrevPage={start > 0}
