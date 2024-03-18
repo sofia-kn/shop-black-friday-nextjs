@@ -13,10 +13,10 @@ export default function BlackFridayMadness() {
         <span className="w-[60px] bg-white border-t-[0.7px] my-0 mx-auto mt-[2rem] md:mt-[1rem]"></span>
       </div>
       <div className="w-full grid gap-6 grid-cols-2 grid-rows-2 md:grid-cols-3 lg:grid-cols-4 lg:grid-rows-1 px-5 mr-2 md:px-7  lg-max:px-[74px] 2xl-max:px-[90px] mt-[3rem]">
+        {/* <ProductCard />
         <ProductCard />
         <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <ProductCard /> */}
       </div>
     </>
   );
